@@ -1,0 +1,39 @@
+{
+  "Film": {
+    "ours_jackson": 34.79,
+    "std": 0.82,
+    "published": 37.9,
+    "gap": -3.11,
+    "none": 33.8,
+    "damp_effect": 0.99,
+    "homophily": 0.159,
+    "note": "patience 300 (Actor val noisy); still ~MLP baseline"
+  },
+  "Chameleon": {
+    "ours_jackson": 65.66,
+    "std": 2.21,
+    "published": 68.64,
+    "gap": -2.98,
+    "none": 65.37,
+    "damp_effect": 0.29,
+    "homophily": 0.104
+  },
+  "Squirrel": {
+    "ours_jackson": 31.55,
+    "std": 1.48,
+    "published": 33.83,
+    "gap": -2.28,
+    "none": 33.26,
+    "damp_effect": -1.71,
+    "homophily": 0.089
+  },
+  "WikiCS": {
+    "ours_jackson": 78.77,
+    "std": 0.61,
+    "published": 80.19,
+    "gap": -1.42,
+    "none": 75.37,
+    "damp_effect": 3.4,
+    "homophily": 0.659
+  }
+}

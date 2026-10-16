@@ -1,0 +1,17 @@
+{
+  "control": {
+    "none": {
+      "acc": 74.36,
+      "std": 1.53
+    },
+    "anti_raw": {
+      "acc": 48.18,
+      "std": 0.62
+    },
+    "anti_l2matched": {
+      "acc": 47.54,
+      "std": 1.8
+    }
+  },
+  "note": "raw vs l2-norm-matched anti taper; if both collapse, the taper's global norm alone does not explain the effect"
+}

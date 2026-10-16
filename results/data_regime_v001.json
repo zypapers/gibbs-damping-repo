@@ -1,0 +1,56 @@
+{
+  "task": "data_regime",
+  "model": "ChebGibbsNet (Eq. 13)",
+  "dataset": "Cora",
+  "K": 10,
+  "note": "damping benefit (Jackson-none) vs train fraction; the benefit decays toward zero as labels grow, which a data-independent fixed-coefficient approximation effect would not predict and a finite-sample regularizer would",
+  "curve": [
+    {
+      "train_frac": 0.02,
+      "jackson": 78.73,
+      "none": 71.66,
+      "benefit": 7.06
+    },
+    {
+      "train_frac": 0.05,
+      "jackson": 82.96,
+      "none": 79.7,
+      "benefit": 3.26
+    },
+    {
+      "train_frac": 0.1,
+      "jackson": 84.88,
+      "none": 82.51,
+      "benefit": 2.37
+    },
+    {
+      "train_frac": 0.2,
+      "jackson": 86.13,
+      "none": 85.44,
+      "benefit": 0.69
+    },
+    {
+      "train_frac": 0.4,
+      "jackson": 87.96,
+      "none": 87.45,
+      "benefit": 0.51
+    },
+    {
+      "train_frac": 0.6,
+      "jackson": 87.98,
+      "none": 88.08,
+      "benefit": -0.09
+    }
+  ],
+  "pubmed_endpoints": {
+    "public_small": 4.76,
+    "dense_large": 0.15
+  },
+  "gso_sign_absorption": {
+    "note": "single Cornell split: S=+A~ and S=-A~ give the same accuracy after 2000 epochs (T_k(-S)=(-1)^k T_k(S) absorbed by free w_k). The ten-split comparison, where the arms differ by 1.62 points under a finite budget, is in sign_absorption_v001.json.",
+    "cornell_2000ep": {
+      "plus": 75.68,
+      "minus": 75.68
+    }
+  }
+}

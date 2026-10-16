@@ -1,0 +1,104 @@
+{
+  "task": "chebgibbsnet_reproduction",
+  "model": "ChebGibbsNet (Eq. 13)",
+  "source": {
+    "repo": "github.com/hazdzz/chebgibbsnet",
+    "paper_commit": "bb3235c",
+    "arxiv": "2412.01789"
+  },
+  "setup": {
+    "K": 10,
+    "split": "public Planetoid",
+    "act": "SiLU",
+    "w_init": "1/(K+1),2/(K+1)",
+    "damping_main": "jackson(K+2)",
+    "S": "+A~ homophily / -A~ hetero (renorm w/ self-loops)",
+    "seeds": 10,
+    "patience": 30,
+    "dropout": {
+      "Cora": 0.6,
+      "CiteSeer": 0.0,
+      "PubMed": 0.1
+    },
+    "lr": 0.01,
+    "wd": 0.0005,
+    "hidden": 64
+  },
+  "fidelity_public_split": {
+    "Cora": {
+      "ours_jackson": 81.98,
+      "ours_std": 0.8,
+      "published": 82.42,
+      "gap": -0.44
+    },
+    "CiteSeer": {
+      "ours_jackson": 70.07,
+      "ours_std": 0.54,
+      "published": 71.14,
+      "gap": -1.07
+    },
+    "PubMed": {
+      "ours_jackson": 79.81,
+      "ours_std": 0.19,
+      "published": 80.18,
+      "gap": -0.37
+    }
+  },
+  "damping_effect_by_data_regime": {
+    "_note": "damping helps ~+4% small-label, ~0% data-rich -> finite-sample conditioning, NOT Gibbs (data-independent)",
+    "Cora": {
+      "public_jackson": 3.73,
+      "public_lanczos": 4.22,
+      "dense_jackson": 0.44,
+      "dense_lanczos": 0.55
+    },
+    "CiteSeer": {
+      "public_jackson": 0.63,
+      "public_lanczos": 0.77,
+      "dense_jackson": 1.78,
+      "dense_lanczos": 1.45
+    },
+    "PubMed": {
+      "public_jackson": 4.76,
+      "public_lanczos": 4.71,
+      "dense_jackson": 0.15,
+      "dense_lanczos": 0.18
+    }
+  },
+  "raw": {
+    "public": {
+      "Cora": {
+        "jackson": 81.98,
+        "lanczos": 82.47,
+        "none": 78.25
+      },
+      "CiteSeer": {
+        "jackson": 70.07,
+        "lanczos": 70.21,
+        "none": 69.44
+      },
+      "PubMed": {
+        "jackson": 79.81,
+        "lanczos": 79.76,
+        "none": 75.05
+      }
+    },
+    "dense": {
+      "Cora": {
+        "jackson": 88.51,
+        "lanczos": 88.62,
+        "none": 88.07
+      },
+      "CiteSeer": {
+        "jackson": 76.13,
+        "lanczos": 75.8,
+        "none": 74.35
+      },
+      "PubMed": {
+        "jackson": 88.35,
+        "lanczos": 88.38,
+        "none": 88.2
+      }
+    }
+  }
+}

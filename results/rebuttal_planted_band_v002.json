@@ -1,0 +1,182 @@
+{
+  "task": "planted_band_positive_control",
+  "n": 3000,
+  "K": 16,
+  "lam0": 0.6,
+  "snr": 1.0,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "note": "Positive control on a task whose population-optimal unrestricted linear response under squared loss is a sharp step -- optimal for linear denoising of the latent score, not the Bayes rule for the binary labels -- so classical ringing applies. Arm 1 frozen Chebyshev-projection coefficients (ringing real, damping should help); arm 2 free coefficients fit by ordinary least squares (a positive taper is an exact reparameterization, so accuracy must be identical).",
+  "arms": {
+    "frozen_response": {
+      "none": {
+        "overshoot": 0.09925178007005786,
+        "max_response": 1.0992517800700579,
+        "band_half_width": 0.17995732672240508,
+        "err_share_in_band": 0.9236787489906754,
+        "band_frac_of_axis": 0.1797050737315671
+      },
+      "jackson": {
+        "overshoot": -0.0006659188314614983,
+        "max_response": 0.9993340811685385,
+        "band_half_width": 0.17995732672240508,
+        "err_share_in_band": 0.968877644423872,
+        "band_frac_of_axis": 0.1797050737315671
+      },
+      "lanczos": {
+        "overshoot": 0.0002855562827555058,
+        "max_response": 1.0002855562827555,
+        "band_half_width": 0.17995732672240508,
+        "err_share_in_band": 0.9493098964223813,
+        "band_frac_of_axis": 0.1797050737315671
+      }
+    },
+    "accuracy": {
+      "frozen": {
+        "none": {
+          "mean": 86.67999999999999,
+          "std": 1.195844657321528
+        },
+        "jackson": {
+          "mean": 86.78000000000002,
+          "std": 1.1881077392223303
+        },
+        "lanczos": {
+          "mean": 86.66,
+          "std": 1.2427389106324773
+        }
+      },
+      "free_ols": {
+        "none": {
+          "mean": 88.54,
+          "std": 1.161397625468746
+        },
+        "jackson": {
+          "mean": 88.54,
+          "std": 1.161397625468746
+        },
+        "lanczos": {
+          "mean": 88.54,
+          "std": 1.161397625468746
+        }
+      }
+    },
+    "raw": {
+      "frozen": {
+        "none": [
+          0.8893333333333333,
+          0.874,
+          0.8526666666666667,
+          0.85,
+          0.87,
+          0.8646666666666667,
+          0.86,
+          0.8833333333333333,
+          0.864,
+          0.86
+        ],
+        "jackson": [
+          0.8866666666666667,
+          0.872,
+          0.8473333333333334,
+          0.8513333333333334,
+          0.8626666666666667,
+          0.876,
+          0.866,
+          0.876,
+          0.8606666666666667,
+          0.8793333333333333
+        ],
+        "lanczos": [
+          0.8873333333333333,
+          0.8693333333333333,
+          0.8466666666666667,
+          0.8506666666666667,
+          0.8606666666666667,
+          0.876,
+          0.8626666666666667,
+          0.8726666666666667,
+          0.8586666666666667,
+          0.8813333333333333
+        ]
+      },
+      "free_ols": {
+        "none": [
+          0.8993333333333333,
+          0.898,
+          0.8706666666666667,
+          0.872,
+          0.882,
+          0.8953333333333333,
+          0.8833333333333333,
+          0.8953333333333333,
+          0.8666666666666667,
+          0.8913333333333333
+        ],
+        "jackson": [
+          0.8993333333333333,
+          0.898,
+          0.8706666666666667,
+          0.872,
+          0.882,
+          0.8953333333333333,
+          0.8833333333333333,
+          0.8953333333333333,
+          0.8666666666666667,
+          0.8913333333333333
+        ],
+        "lanczos": [
+          0.8993333333333333,
+          0.898,
+          0.8706666666666667,
+          0.872,
+          0.882,
+          0.8953333333333333,
+          0.8833333333333333,
+          0.8953333333333333,
+          0.8666666666666667,
+          0.8913333333333333
+        ]
+      }
+    }
+  },
+  "free_coefficient_agreement": {
+    "note": "Across-taper agreement in the free-coefficient (OLS) arm, per seed. fit = realized fitted response on all nodes; coef = realized c_k = g_k w_k. Both are max |difference| against the no-taper arm. D.1 quotes the maxima over seeds.",
+    "fit_max_abs_diff": [
+      8.963163544706276e-10,
+      1.8059109763157721e-09,
+      6.901559324035134e-10,
+      6.140210562222137e-10,
+      3.899466305412602e-10,
+      4.283483567846247e-10,
+      8.519351057945102e-10,
+      1.221793777261837e-09,
+      3.5663605402191934e-10,
+      6.767648663696946e-10
+    ],
+    "coef_max_abs_diff": [
+      8.457174408249557e-05,
+      0.0001761697931215167,
+      3.8459416828118265e-05,
+      0.00012618412438314408,
+      1.3579672668129206e-05,
+      3.467235364951193e-05,
+      0.00012904635514132679,
+      1.4824006939306855e-05,
+      0.00013434926222544163,
+      4.098500357940793e-05
+    ],
+    "fit_max_over_seeds": 1.8059109763157721e-09,
+    "coef_max_over_seeds": 0.0001761697931215167
+  }
+}

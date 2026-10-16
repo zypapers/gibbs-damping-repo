@@ -1,0 +1,11 @@
+# Python 3.10-3.11. Versions used to generate the committed results/*.json:
+#   torch 2.11.0, torch-geometric 2.8.0, numpy 2.4.6, scipy 1.17.1,
+#   scikit-learn 1.8.0, matplotlib 3.10.9
+# torch / torch-geometric are left unpinned because their wheels are platform/CUDA-specific;
+# any recent 2.x pair reproduces the cached results within seed noise. Pin the rest if needed.
+torch
+torch-geometric
+numpy
+scipy
+scikit-learn
+matplotlib

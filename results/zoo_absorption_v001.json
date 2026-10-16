@@ -1,0 +1,41 @@
+{
+  "mono": {
+    "like": "GPR-GNN",
+    "frozen": {
+      "taper": 81.14,
+      "none": 82.76,
+      "eff": -1.62
+    },
+    "free": {
+      "taper": 82.66,
+      "none": 83.44,
+      "eff": -0.78
+    }
+  },
+  "cheb": {
+    "like": "ChebNet",
+    "frozen": {
+      "taper": 80.88,
+      "none": 44.52,
+      "eff": 36.36
+    },
+    "free": {
+      "taper": 82.14,
+      "none": 75.4,
+      "eff": 6.74
+    }
+  },
+  "bern": {
+    "like": "BernNet",
+    "frozen": {
+      "taper": 21.86,
+      "none": 27.08,
+      "eff": -5.22
+    },
+    "free": {
+      "taper": 79.74,
+      "none": 79.24,
+      "eff": 0.5
+    }
+  }
+}

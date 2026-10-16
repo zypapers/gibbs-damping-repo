@@ -1,0 +1,79 @@
+{
+  "sign_flip_hard_cSBM_d4_snr0": {
+    "h=0.85_homophily": {
+      "decaying": {
+        "mean": 63.03,
+        "std": 3.6
+      },
+      "flat": {
+        "mean": 82.9,
+        "std": 2.46
+      },
+      "increasing": {
+        "mean": 48.7,
+        "std": 2.09
+      }
+    },
+    "h=0.15_heterophily": {
+      "decaying": {
+        "mean": 65.32,
+        "std": 2.94
+      },
+      "flat": {
+        "mean": 84.32,
+        "std": 1.23
+      },
+      "increasing": {
+        "mean": 48.12,
+        "std": 0.8
+      }
+    }
+  },
+  "required_K_data_rich": {
+    "Cora": {
+      "1": {
+        "mean": 87.59,
+        "std": 1.22
+      },
+      "2": {
+        "mean": 88.14,
+        "std": 1.24
+      },
+      "4": {
+        "mean": 87.07,
+        "std": 1.01
+      },
+      "8": {
+        "mean": 86.0,
+        "std": 1.23
+      },
+      "16": {
+        "mean": 86.37,
+        "std": 1.45
+      }
+    },
+    "CiteSeer": {
+      "1": {
+        "mean": 77.24,
+        "std": 0.99
+      },
+      "2": {
+        "mean": 77.09,
+        "std": 0.73
+      },
+      "4": {
+        "mean": 75.38,
+        "std": 1.31
+      },
+      "8": {
+        "mean": 75.05,
+        "std": 1.2
+      },
+      "16": {
+        "mean": 73.15,
+        "std": 0.64
+      }
+    }
+  },
+  "note": "per-seed mean/std for Fig 4 error bars; 5 seeds"
+}

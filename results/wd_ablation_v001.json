@@ -1,0 +1,53 @@
+{
+  "wd_ablation": {
+    "Cora": {
+      "wd=0.0": {
+        "jackson": 81.7,
+        "jackson_std": 1.18,
+        "none": 75.36,
+        "none_std": 1.37,
+        "benefit": 6.34
+      },
+      "wd=0.0005": {
+        "jackson": 82.36,
+        "jackson_std": 0.6,
+        "none": 78.22,
+        "none_std": 0.95,
+        "benefit": 4.14
+      }
+    },
+    "CiteSeer": {
+      "wd=0.0": {
+        "jackson": 69.3,
+        "jackson_std": 0.37,
+        "none": 67.9,
+        "none_std": 0.45,
+        "benefit": 1.4
+      },
+      "wd=0.0005": {
+        "jackson": 69.8,
+        "jackson_std": 0.56,
+        "none": 69.34,
+        "none_std": 0.63,
+        "benefit": 0.46
+      }
+    },
+    "PubMed": {
+      "wd=0.0": {
+        "jackson": 77.98,
+        "jackson_std": 0.99,
+        "none": 72.52,
+        "none_std": 2.17,
+        "benefit": 5.46
+      },
+      "wd=0.0005": {
+        "jackson": 79.9,
+        "jackson_std": 0.23,
+        "none": 74.36,
+        "none_std": 1.53,
+        "benefit": 5.54
+      }
+    }
+  },
+  "note": "public/small-label split, K=10, 5 seeds; benefit=jackson-none"
+}

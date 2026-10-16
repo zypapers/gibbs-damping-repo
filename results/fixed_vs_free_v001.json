@@ -1,0 +1,26 @@
+{
+  "Cora": {
+    "frozen": {
+      "jackson": 81.03,
+      "none": 69.65,
+      "damp_effect": 11.38
+    },
+    "free": {
+      "jackson": 81.98,
+      "none": 78.06,
+      "damp_effect": 3.91
+    }
+  },
+  "PubMed": {
+    "frozen": {
+      "jackson": 78.51,
+      "none": 69.1,
+      "damp_effect": 9.41
+    },
+    "free": {
+      "jackson": 79.83,
+      "none": 75.01,
+      "damp_effect": 4.81
+    }
+  }
+}

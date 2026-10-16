@@ -1,0 +1,475 @@
+{
+  "note": "Canonical derived statistics. Every CI is a percentile bootstrap with B=20000 and a generator seeded from the quoted key, so the quoted intervals cannot drift apart.",
+  "B": 20000,
+  "K": 10,
+  "breadth": {
+    "Cora": {
+      "metric": "acc",
+      "none": 78.2200038433075,
+      "gain": {
+        "none": 0.0,
+        "jackson(KPM)": 4.140000343322754,
+        "lanczos(KPM)": 4.40000057220459,
+        "geometric(low-pass)": 3.8399994373321533,
+        "cosine(low-pass)": 3.8200008869171143,
+        "increasing(anti)": -33.26000213623047
+      },
+      "jackson_minus_cosine": {
+        "mean": 0.31999945640563965,
+        "lo": 0.08000016212463379,
+        "hi": 0.5599987506866455,
+        "n": 5,
+        "key": "breadth|Cora|jackson-cosine"
+      },
+      "M_hi": {
+        "none": 0.1623798220379257,
+        "jackson(KPM)": 0.012488486399972918,
+        "lanczos(KPM)": 0.005000871208786536,
+        "geometric(low-pass)": 0.0011299075775072207,
+        "cosine(low-pass)": 0.017549160803656084,
+        "increasing(anti)": 0.9965625891944483
+      }
+    },
+    "CiteSeer": {
+      "metric": "acc",
+      "none": 69.34000253677368,
+      "gain": {
+        "none": 0.0,
+        "jackson(KPM)": 0.46000003814697266,
+        "lanczos(KPM)": 0.8600008487701416,
+        "geometric(low-pass)": 1.0000014305114746,
+        "cosine(low-pass)": 0.6400001049041748,
+        "increasing(anti)": -16.00000023841858
+      },
+      "jackson_minus_cosine": {
+        "mean": -0.18000006675720215,
+        "lo": -0.5799984931945801,
+        "hi": 0.21999835968017578,
+        "n": 5,
+        "key": "breadth|CiteSeer|jackson-cosine"
+      },
+      "M_hi": {
+        "none": 0.4685695066087438,
+        "jackson(KPM)": 0.03311216816535207,
+        "lanczos(KPM)": 0.013175335942313118,
+        "geometric(low-pass)": 0.001893841506855309,
+        "cosine(low-pass)": 0.06735813659771599,
+        "increasing(anti)": 0.9946468684840079
+      }
+    },
+    "PubMed": {
+      "metric": "acc",
+      "none": 74.36000347137451,
+      "gain": {
+        "none": 0.0,
+        "jackson(KPM)": 5.540001392364502,
+        "lanczos(KPM)": 5.559999942779541,
+        "geometric(low-pass)": 4.65999960899353,
+        "cosine(low-pass)": 5.419999361038208,
+        "increasing(anti)": -26.18000090122223
+      },
+      "jackson_minus_cosine": {
+        "mean": 0.12000203132629395,
+        "lo": -0.31999826431274414,
+        "hi": 0.5200016498565674,
+        "n": 5,
+        "key": "breadth|PubMed|jackson-cosine"
+      },
+      "M_hi": {
+        "none": 0.3127298434633135,
+        "jackson(KPM)": 0.031337409733265376,
+        "lanczos(KPM)": 0.012060778704744842,
+        "geometric(low-pass)": 0.0018428530997024492,
+        "cosine(low-pass)": 0.055367251834066177,
+        "increasing(anti)": 0.9986236503271204
+      }
+    },
+    "roman-empire": {
+      "metric": "acc",
+      "none": 72.4567574262619,
+      "gain": {
+        "none": 0.0,
+        "jackson(KPM)": -1.2389689683914185,
+        "lanczos(KPM)": -1.247793436050415,
+        "geometric(low-pass)": -0.8806908130645752,
+        "cosine(low-pass)": -1.1524885892868042,
+        "increasing(anti)": -5.8948105573654175
+      },
+      "jackson_minus_cosine": {
+        "mean": -0.08648037910461426,
+        "lo": -0.2417934089899063,
+        "hi": 0.052949801087379456,
+        "n": 10,
+        "key": "breadth|roman-empire|jackson-cosine"
+      },
+      "M_hi": {
+        "none": 0.0820679321538433,
+        "jackson(KPM)": 0.0005039376428695903,
+        "lanczos(KPM)": 0.0003726683720324163,
+        "geometric(low-pass)": 9.68860430690769e-05,
+        "cosine(low-pass)": 0.0008683748405931087,
+        "increasing(anti)": 0.8871074844530641
+      }
+    },
+    "amazon-ratings": {
+      "metric": "acc",
+      "none": 43.17654728889465,
+      "gain": {
+        "none": 0.0,
+        "jackson(KPM)": 0.047362446784973145,
+        "lanczos(KPM)": 0.029397010803222656,
+        "geometric(low-pass)": -0.315205454826355,
+        "cosine(low-pass)": 0.11432290077209473,
+        "increasing(anti)": -1.0044097900390625
+      },
+      "jackson_minus_cosine": {
+        "mean": -0.06696045398712158,
+        "lo": -0.2172127440571785,
+        "hi": 0.0881919264793396,
+        "n": 10,
+        "key": "breadth|amazon-ratings|jackson-cosine"
+      },
+      "M_hi": {
+        "none": 0.32752524238386405,
+        "jackson(KPM)": 0.06052974095899895,
+        "lanczos(KPM)": 0.023485405776747573,
+        "geometric(low-pass)": 0.002535154298360126,
+        "cosine(low-pass)": 0.10278253905253484,
+        "increasing(anti)": 0.9819665879580186
+      }
+    },
+    "minesweeper": {
+      "metric": "ROC-AUC",
+      "none": 90.10448,
+      "gain": {
+        "none": 0.0,
+        "jackson(KPM)": 0.08214499999999703,
+        "lanczos(KPM)": 0.029245000000003074,
+        "geometric(low-pass)": -0.031490000000005125,
+        "cosine(low-pass)": 0.09496999999998934,
+        "increasing(anti)": -0.30326000000000874
+      },
+      "jackson_minus_cosine": {
+        "mean": -0.012824999999998,
+        "lo": -0.04224037500000236,
+        "hi": 0.02133000000000749,
+        "n": 10,
+        "key": "breadth|minesweeper|jackson-cosine"
+      },
+      "M_hi": {
+        "none": 0.03170365827951391,
+        "jackson(KPM)": 0.010673519318907377,
+        "lanczos(KPM)": 0.004969055760686881,
+        "geometric(low-pass)": 0.002514531490169535,
+        "cosine(low-pass)": 0.017523650480195736,
+        "increasing(anti)": 0.3343948984167565
+      }
+    },
+    "tolokers": {
+      "metric": "ROC-AUC",
+      "none": 77.01478191790777,
+      "gain": {
+        "none": 0.0,
+        "jackson(KPM)": -0.3415471668442507,
+        "lanczos(KPM)": -1.0025479287149466,
+        "geometric(low-pass)": -1.2739575792575977,
+        "cosine(low-pass)": -0.17227834579168189,
+        "increasing(anti)": -8.611609309463205
+      },
+      "jackson_minus_cosine": {
+        "mean": -0.1692688210525759,
+        "lo": -0.2021261885589297,
+        "hi": -0.1354551330020126,
+        "n": 10,
+        "key": "breadth|tolokers|jackson-cosine"
+      },
+      "M_hi": {
+        "none": 0.2014646239943132,
+        "jackson(KPM)": 0.1495550940692004,
+        "lanczos(KPM)": 0.10422792390239008,
+        "geometric(low-pass)": 0.08830743029247477,
+        "cosine(low-pass)": 0.1658842045567689,
+        "increasing(anti)": 0.9047177946552518
+      }
+    },
+    "questions": {
+      "metric": "ROC-AUC",
+      "none": 75.31730811412369,
+      "gain": {
+        "none": 0.0,
+        "jackson(KPM)": -0.16714960898987385,
+        "lanczos(KPM)": -0.39879106645209106,
+        "geometric(low-pass)": -0.9187594808697099,
+        "cosine(low-pass)": -0.0987649760222098,
+        "increasing(anti)": -13.36641469006647
+      },
+      "jackson_minus_cosine": {
+        "mean": -0.06838463296768822,
+        "lo": -0.1087440170950119,
+        "hi": -0.024981788649051102,
+        "n": 10,
+        "key": "breadth|questions|jackson-cosine"
+      },
+      "M_hi": {
+        "none": 0.03345398182472011,
+        "jackson(KPM)": 0.00704522013726356,
+        "lanczos(KPM)": 0.0025207698310155072,
+        "geometric(low-pass)": 0.00016602702678082223,
+        "cosine(low-pass)": 0.010495868840896306,
+        "increasing(anti)": 0.8617527587029331
+      }
+    }
+  },
+  "stability": {
+    "Cora|small-label|baseline": {
+      "none": 71.0459053516388,
+      "jackson": 78.16374897956848,
+      "benefit": {
+        "mean": 7.1178436279296875,
+        "lo": 5.783247947692871,
+        "hi": 8.263134956359863,
+        "n": 5,
+        "key": "stability|Cora|small-label|baseline|benefit"
+      },
+      "clip_frac": {
+        "none": null,
+        "jackson": null
+      }
+    },
+    "Cora|small-label|grad-clip": {
+      "none": 70.86606621742249,
+      "jackson": 76.38428807258606,
+      "benefit": {
+        "mean": 5.518221855163574,
+        "lo": 4.562234878540039,
+        "hi": 6.474208831787109,
+        "n": 5,
+        "key": "stability|Cora|small-label|grad-clip|benefit"
+      },
+      "clip_frac": {
+        "none": 0.8673406175220485,
+        "jackson": 0.8325301075863447
+      }
+    },
+    "Cora|small-label|low-LR": {
+      "none": 68.15901398658752,
+      "jackson": 77.0184576511383,
+      "benefit": {
+        "mean": 8.859443664550781,
+        "lo": 5.754852294921875,
+        "hi": 11.519169807434082,
+        "n": 5,
+        "key": "stability|Cora|small-label|low-LR|benefit"
+      },
+      "clip_frac": {
+        "none": null,
+        "jackson": null
+      }
+    },
+    "Cora|large-label|baseline": {
+      "none": 87.80847430229187,
+      "jackson": 88.47145676612854,
+      "benefit": {
+        "mean": 0.6629824638366699,
+        "lo": 0.03683209419250488,
+        "hi": 1.289132833480835,
+        "n": 5,
+        "key": "stability|Cora|large-label|baseline|benefit"
+      },
+      "clip_frac": {
+        "none": null,
+        "jackson": null
+      }
+    },
+    "Cora|large-label|grad-clip": {
+      "none": 87.14548945426941,
+      "jackson": 87.88213849067688,
+      "benefit": {
+        "mean": 0.7366490364074707,
+        "lo": -0.5893182754516602,
+        "hi": 1.9152843952178955,
+        "n": 5,
+        "key": "stability|Cora|large-label|grad-clip|benefit"
+      },
+      "clip_frac": {
+        "none": 0.8657155070260816,
+        "jackson": 0.8198326418712588
+      }
+    },
+    "Cora|large-label|low-LR": {
+      "none": 88.25046300888062,
+      "jackson": 88.83978128433228,
+      "benefit": {
+        "mean": 0.5893182754516602,
+        "lo": 0.18416166305541992,
+        "hi": 0.9944748878479004,
+        "n": 5,
+        "key": "stability|Cora|large-label|low-LR|benefit"
+      },
+      "clip_frac": {
+        "none": null,
+        "jackson": null
+      }
+    },
+    "PubMed|small-label|baseline": {
+      "none": 81.12353801727295,
+      "jackson": 84.91027355194092,
+      "benefit": {
+        "mean": 3.7867355346679688,
+        "lo": 3.196359872817993,
+        "hi": 4.451233148574829,
+        "n": 5,
+        "key": "stability|PubMed|small-label|baseline|benefit"
+      },
+      "clip_frac": {
+        "none": null,
+        "jackson": null
+      }
+    },
+    "PubMed|small-label|grad-clip": {
+      "none": 81.13654255867004,
+      "jackson": 85.06111979484558,
+      "benefit": {
+        "mean": 3.924577236175537,
+        "lo": 3.3615076541900635,
+        "hi": 4.608581066131592,
+        "n": 5,
+        "key": "stability|PubMed|small-label|grad-clip|benefit"
+      },
+      "clip_frac": {
+        "none": 0.31067136139780516,
+        "jackson": 0.6709476031215162
+      }
+    },
+    "PubMed|small-label|low-LR": {
+      "none": 81.09753131866455,
+      "jackson": 84.92197751998901,
+      "benefit": {
+        "mean": 3.824446201324463,
+        "lo": 3.43302845954895,
+        "hi": 4.252274036407471,
+        "n": 5,
+        "key": "stability|PubMed|small-label|low-LR|benefit"
+      },
+      "clip_frac": {
+        "none": null,
+        "jackson": null
+      }
+    },
+    "PubMed|large-label|baseline": {
+      "none": 89.06693458557129,
+      "jackson": 89.0010118484497,
+      "benefit": {
+        "mean": -0.06592273712158203,
+        "lo": -0.23833632469177246,
+        "hi": 0.11663079261779785,
+        "n": 5,
+        "key": "stability|PubMed|large-label|baseline|benefit"
+      },
+      "clip_frac": {
+        "none": null,
+        "jackson": null
+      }
+    },
+    "PubMed|large-label|grad-clip": {
+      "none": 88.84381055831909,
+      "jackson": 87.75354743003845,
+      "benefit": {
+        "mean": -1.0902631282806396,
+        "lo": -1.3438141345977783,
+        "hi": -0.836712121963501,
+        "n": 5,
+        "key": "stability|PubMed|large-label|grad-clip|benefit"
+      },
+      "clip_frac": {
+        "none": 0.2677757734616759,
+        "jackson": 0.5797630880724413
+      }
+    },
+    "PubMed|large-label|low-LR": {
+      "none": 89.29512977600098,
+      "jackson": 89.15821433067322,
+      "benefit": {
+        "mean": -0.1369154453277588,
+        "lo": -0.28397321701049805,
+        "hi": -0.015212297439575195,
+        "n": 5,
+        "key": "stability|PubMed|large-label|low-LR|benefit"
+      },
+      "clip_frac": {
+        "none": null,
+        "jackson": null
+      }
+    }
+  },
+  "interaction": {
+    "Cora|grad-clip": {
+      "mean": -1.5996217727661133,
+      "lo": -3.5399913787841797,
+      "hi": 0.3407478332519531,
+      "n": 5,
+      "key": "interaction|Cora|grad-clip"
+    },
+    "Cora|low-LR": {
+      "mean": 1.7416000366210938,
+      "lo": -0.6436347961425781,
+      "hi": 4.126834869384766,
+      "n": 5,
+      "key": "interaction|Cora|low-LR"
+    },
+    "PubMed|grad-clip": {
+      "mean": 0.13784170150756836,
+      "lo": 0.036411285400390625,
+      "hi": 0.28478503227233887,
+      "n": 5,
+      "key": "interaction|PubMed|grad-clip"
+    },
+    "PubMed|low-LR": {
+      "mean": 0.03771066665649414,
+      "lo": -0.23276925086975098,
+      "hi": 0.26007652282714844,
+      "n": 5,
+      "key": "interaction|PubMed|low-LR"
+    }
+  },
+  "planted": {
+    "frozen_response": {
+      "none": {
+        "overshoot": 0.09925178007005786,
+        "max_response": 1.0992517800700579,
+        "band_half_width": 0.17995732672240508,
+        "err_share_in_band": 0.9236787489906754,
+        "band_frac_of_axis": 0.1797050737315671
+      },
+      "jackson": {
+        "overshoot": -0.0006659188314614983,
+        "max_response": 0.9993340811685385,
+        "band_half_width": 0.17995732672240508,
+        "err_share_in_band": 0.968877644423872,
+        "band_frac_of_axis": 0.1797050737315671
+      },
+      "lanczos": {
+        "overshoot": 0.0002855562827555058,
+        "max_response": 1.0002855562827555,
+        "band_half_width": 0.17995732672240508,
+        "err_share_in_band": 0.9493098964223813,
+        "band_frac_of_axis": 0.1797050737315671
+      }
+    },
+    "frozen_task_effect": {
+      "mean": 0.10000000000000231,
+      "lo": -0.36666666666666403,
+      "hi": 0.6533333333333335,
+      "n": 10,
+      "key": "planted|frozen|task-effect"
+    },
+    "free_ols_max_abs_acc_diff": 0.0,
+    "free_ols_max_abs_fit_diff": 1.8059109763157721e-09,
+    "free_ols_max_abs_coef_diff": 0.0001761697931215167,
+    "lam0": 0.6,
+    "K": 16,
+    "n": 3000,
+    "seeds": 10,
+    "band_half_width_lambda": 0.17995732672240508
+  }
+}

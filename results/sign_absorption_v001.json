@@ -1,0 +1,28 @@
+{
+  "task": "gso_sign_absorption",
+  "dataset": "Cornell",
+  "epochs": 2000,
+  "note": "T_k(-S) = (-1)^k T_k(S), so with free w_k the sign of S is absorbed into the coefficients and the reachable filter class is identical. Finite training need not make the two arms agree: they start from the same raw rather than parity-matched initialization.",
+  "split0": {
+    "plus": {
+      "mean": 75.68,
+      "std": 0.0
+    },
+    "minus": {
+      "mean": 75.68,
+      "std": 0.0
+    },
+    "abs_diff": 0.0
+  },
+  "all_splits": {
+    "plus": {
+      "mean": 67.84,
+      "std": 11.56
+    },
+    "minus": {
+      "mean": 69.46,
+      "std": 9.67
+    },
+    "abs_diff": 1.62
+  }
+}

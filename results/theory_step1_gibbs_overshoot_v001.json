@@ -1,0 +1,572 @@
+{
+  "task": "1.1",
+  "step": 1,
+  "claim": "non-vanishing Gibbs overshoot of the truncated Chebyshev projection of a spectral step",
+  "gibbs_constant_target": 0.08948987223608351,
+  "convention": "normalized Laplacian, lambda in [0,2], x=lambda-1",
+  "K_list": [
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256,
+    512,
+    1024,
+    2048
+  ],
+  "lambda0_list": [
+    0.4,
+    0.8,
+    1.0,
+    1.2,
+    1.6
+  ],
+  "overshoot_table": [
+    {
+      "lambda0": 0.4,
+      "K": 4,
+      "kind": "lowpass",
+      "overshoot": 0.09917556648296388,
+      "undershoot": -0.11221207210394285,
+      "lambda_at_overshoot": 0.0,
+      "lambda_at_undershoot": 1.1163871276659405,
+      "theta0": 2.214297435588181
+    },
+    {
+      "lambda0": 0.4,
+      "K": 8,
+      "kind": "lowpass",
+      "overshoot": 0.06264068468222073,
+      "undershoot": -0.11085205152199523,
+      "lambda_at_overshoot": 0.15282794032285008,
+      "lambda_at_undershoot": 0.7284036748938998,
+      "theta0": 2.214297435588181
+    },
+    {
+      "lambda0": 0.4,
+      "K": 16,
+      "kind": "lowpass",
+      "overshoot": 0.09870810275303166,
+      "undershoot": -0.08240985926218036,
+      "lambda_at_overshoot": 0.2628334586937864,
+      "lambda_at_undershoot": 0.5575692436281801,
+      "theta0": 2.214297435588181
+    },
+    {
+      "lambda0": 0.4,
+      "K": 32,
+      "kind": "lowpass",
+      "overshoot": 0.08424556558487661,
+      "undershoot": -0.09454457545704559,
+      "lambda_at_overshoot": 0.3264328171922253,
+      "lambda_at_undershoot": 0.4792572246582305,
+      "theta0": 2.214297435588181
+    },
+    {
+      "lambda0": 0.4,
+      "K": 64,
+      "kind": "lowpass",
+      "overshoot": 0.09255893268416315,
+      "undershoot": -0.08655596283968608,
+      "lambda_at_overshoot": 0.361685925900746,
+      "lambda_at_undershoot": 0.4397277698409646,
+      "theta0": 2.214297435588181
+    },
+    {
+      "lambda0": 0.4,
+      "K": 128,
+      "kind": "lowpass",
+      "overshoot": 0.09090219746010053,
+      "undershoot": -0.08811244702825616,
+      "lambda_at_overshoot": 0.38066576201944824,
+      "lambda_at_undershoot": 0.4196912414075413,
+      "theta0": 2.214297435588181
+    },
+    {
+      "lambda0": 0.4,
+      "K": 256,
+      "kind": "lowpass",
+      "overshoot": 0.08929865136626436,
+      "undershoot": -0.08968277214772336,
+      "lambda_at_overshoot": 0.3902875315230605,
+      "lambda_at_undershoot": 0.4098017226529824,
+      "theta0": 2.214297435588181
+    },
+    {
+      "lambda0": 0.4,
+      "K": 512,
+      "kind": "lowpass",
+      "overshoot": 0.08943386261480124,
+      "undershoot": -0.08954609471953334,
+      "lambda_at_overshoot": 0.3950958679650314,
+      "lambda_at_undershoot": 0.40492678386770486,
+      "theta0": 2.214297435588181
+    },
+    {
+      "lambda0": 0.4,
+      "K": 1024,
+      "kind": "lowpass",
+      "overshoot": 0.0893324592143685,
+      "undershoot": -0.08964488534972093,
+      "lambda_at_overshoot": 0.3975450909116758,
+      "lambda_at_undershoot": 0.40246057205987074,
+      "theta0": 2.214297435588181
+    },
+    {
+      "lambda0": 0.4,
+      "K": 2048,
+      "kind": "lowpass",
+      "overshoot": 0.08943108172849756,
+      "undershoot": -0.08954519664578575,
+      "lambda_at_overshoot": 0.3987718361350059,
+      "lambda_at_undershoot": 0.4012295796087161,
+      "theta0": 2.214297435588181
+    },
+    {
+      "lambda0": 0.8,
+      "K": 4,
+      "kind": "lowpass",
+      "overshoot": 0.13078111350114652,
+      "undershoot": -0.057636946850877224,
+      "lambda_at_overshoot": 0.2264329876845067,
+      "lambda_at_undershoot": 1.4536132971365034,
+      "theta0": 1.7721542475852274
+    },
+    {
+      "lambda0": 0.8,
+      "K": 8,
+      "kind": "lowpass",
+      "overshoot": 0.08587275885176249,
+      "undershoot": -0.09672210587795027,
+      "lambda_at_overshoot": 0.47810792629708,
+      "lambda_at_undershoot": 1.149015405878107,
+      "theta0": 1.7721542475852274
+    },
+    {
+      "lambda0": 0.8,
+      "K": 16,
+      "kind": "lowpass",
+      "overshoot": 0.09372538164908661,
+      "undershoot": -0.0866123772221612,
+      "lambda_at_overshoot": 0.612993132292815,
+      "lambda_at_undershoot": 0.9947111761393247,
+      "theta0": 1.7721542475852274
+    },
+    {
+      "lambda0": 0.8,
+      "K": 32,
+      "kind": "lowpass",
+      "overshoot": 0.09215827900268003,
+      "undershoot": -0.08714324396653084,
+      "lambda_at_overshoot": 0.7051629270458485,
+      "lambda_at_undershoot": 0.8967501771043345,
+      "theta0": 1.7721542475852274
+    },
+    {
+      "lambda0": 0.8,
+      "K": 64,
+      "kind": "lowpass",
+      "overshoot": 0.09140590511423152,
+      "undershoot": -0.08764109306472623,
+      "lambda_at_overshoot": 0.7522845828311612,
+      "lambda_at_undershoot": 0.8482019677816459,
+      "theta0": 1.7721542475852274
+    },
+    {
+      "lambda0": 0.8,
+      "K": 128,
+      "kind": "lowpass",
+      "overshoot": 0.09075435634338858,
+      "undershoot": -0.08823547152496869,
+      "lambda_at_overshoot": 0.7760716589643739,
+      "lambda_at_undershoot": 0.824048241949398,
+      "theta0": 1.7721542475852274
+    },
+    {
+      "lambda0": 0.8,
+      "K": 256,
+      "kind": "lowpass",
+      "overshoot": 0.08972376755779665,
+      "undershoot": -0.08925920709662205,
+      "lambda_at_overshoot": 0.788019943510386,
+      "lambda_at_undershoot": 0.812010032841284,
+      "theta0": 1.7721542475852274
+    },
+    {
+      "lambda0": 0.8,
+      "K": 512,
+      "kind": "lowpass",
+      "overshoot": 0.0892300966407873,
+      "undershoot": -0.08974682807041112,
+      "lambda_at_overshoot": 0.7939835933890153,
+      "lambda_at_undershoot": 0.8060239572218966,
+      "theta0": 1.7721542475852274
+    },
+    {
+      "lambda0": 0.8,
+      "K": 1024,
+      "kind": "lowpass",
+      "overshoot": 0.08935232865962495,
+      "undershoot": -0.08962480245544846,
+      "lambda_at_overshoot": 0.7970021053754623,
+      "lambda_at_undershoot": 0.8029997681684554,
+      "theta0": 1.7721542475852274
+    },
+    {
+      "lambda0": 0.8,
+      "K": 2048,
+      "kind": "lowpass",
+      "overshoot": 0.08956432675196968,
+      "undershoot": -0.08941260602385748,
+      "lambda_at_overshoot": 0.7984951815999757,
+      "lambda_at_undershoot": 0.801505290314598,
+      "theta0": 1.7721542475852274
+    },
+    {
+      "lambda0": 1.0,
+      "K": 4,
+      "kind": "lowpass",
+      "overshoot": 0.10021086875896335,
+      "undershoot": -0.10021086875896346,
+      "lambda_at_overshoot": 0.2928237934975654,
+      "lambda_at_undershoot": 1.7071762065024347,
+      "theta0": 1.5707963267948966
+    },
+    {
+      "lambda0": 1.0,
+      "K": 8,
+      "kind": "lowpass",
+      "overshoot": 0.09211255867068324,
+      "undershoot": -0.09211255867068324,
+      "lambda_at_overshoot": 0.6172712115960306,
+      "lambda_at_undershoot": 1.3827287884039694,
+      "theta0": 1.5707963267948966
+    },
+    {
+      "lambda0": 1.0,
+      "K": 16,
+      "kind": "lowpass",
+      "overshoot": 0.09014205659710761,
+      "undershoot": -0.09014205659710761,
+      "lambda_at_overshoot": 0.8048856029408269,
+      "lambda_at_undershoot": 1.1951143970591733,
+      "theta0": 1.5707963267948966
+    },
+    {
+      "lambda0": 1.0,
+      "K": 32,
+      "kind": "lowpass",
+      "overshoot": 0.08965269662128117,
+      "undershoot": -0.08965269662128128,
+      "lambda_at_overshoot": 0.9019706453970282,
+      "lambda_at_undershoot": 1.098029354602972,
+      "theta0": 1.5707963267948966
+    },
+    {
+      "lambda0": 1.0,
+      "K": 64,
+      "kind": "lowpass",
+      "overshoot": 0.0895296217640209,
+      "undershoot": -0.08952962176402124,
+      "lambda_at_overshoot": 0.9508649035028451,
+      "lambda_at_undershoot": 1.0491350964971553,
+      "theta0": 1.5707963267948966
+    },
+    {
+      "lambda0": 1.0,
+      "K": 128,
+      "kind": "lowpass",
+      "overshoot": 0.08949910026597352,
+      "undershoot": -0.08949910026597352,
+      "lambda_at_overshoot": 0.9754250298601748,
+      "lambda_at_undershoot": 1.0245749701398255,
+      "theta0": 1.5707963267948966
+    },
+    {
+      "lambda0": 1.0,
+      "K": 256,
+      "kind": "lowpass",
+      "overshoot": 0.08949147067992325,
+      "undershoot": -0.08949147067992302,
+      "lambda_at_overshoot": 0.9877115870885985,
+      "lambda_at_undershoot": 1.0122884129114016,
+      "theta0": 1.5707963267948966
+    },
+    {
+      "lambda0": 1.0,
+      "K": 512,
+      "kind": "lowpass",
+      "overshoot": 0.08948956333268265,
+      "undershoot": -0.08948956333268243,
+      "lambda_at_overshoot": 0.9938556775608292,
+      "lambda_at_undershoot": 1.006144322439171,
+      "theta0": 1.5707963267948966
+    },
+    {
+      "lambda0": 1.0,
+      "K": 1024,
+      "kind": "lowpass",
+      "overshoot": 0.08948908649895171,
+      "undershoot": -0.08948908649894882,
+      "lambda_at_overshoot": 0.9969278242823782,
+      "lambda_at_undershoot": 1.003072175717622,
+      "theta0": 1.5707963267948966
+    },
+    {
+      "lambda0": 1.0,
+      "K": 2048,
+      "kind": "lowpass",
+      "overshoot": 0.08948896729071265,
+      "undershoot": -0.08948896729071099,
+      "lambda_at_overshoot": 0.9984639103289313,
+      "lambda_at_undershoot": 1.0015360896710688,
+      "theta0": 1.5707963267948966
+    },
+    {
+      "lambda0": 1.2,
+      "K": 4,
+      "kind": "lowpass",
+      "overshoot": 0.05763694685087728,
+      "undershoot": -0.13078111350114674,
+      "lambda_at_overshoot": 0.5463867028634963,
+      "lambda_at_undershoot": 1.7735670123154934,
+      "theta0": 1.369438406004566
+    },
+    {
+      "lambda0": 1.2,
+      "K": 8,
+      "kind": "lowpass",
+      "overshoot": 0.09672210587795016,
+      "undershoot": -0.0858727588517626,
+      "lambda_at_overshoot": 0.850984594121893,
+      "lambda_at_undershoot": 1.52189207370292,
+      "theta0": 1.369438406004566
+    },
+    {
+      "lambda0": 1.2,
+      "K": 16,
+      "kind": "lowpass",
+      "overshoot": 0.0866123772221612,
+      "undershoot": -0.09372538164908661,
+      "lambda_at_overshoot": 1.0052888238606752,
+      "lambda_at_undershoot": 1.3870068677071847,
+      "theta0": 1.369438406004566
+    },
+    {
+      "lambda0": 1.2,
+      "K": 32,
+      "kind": "lowpass",
+      "overshoot": 0.08714324396653073,
+      "undershoot": -0.09215827900268025,
+      "lambda_at_overshoot": 1.1032498228956655,
+      "lambda_at_undershoot": 1.2948370729541514,
+      "theta0": 1.369438406004566
+    },
+    {
+      "lambda0": 1.2,
+      "K": 64,
+      "kind": "lowpass",
+      "overshoot": 0.08764109306472667,
+      "undershoot": -0.09140590511423208,
+      "lambda_at_overshoot": 1.1517980322183543,
+      "lambda_at_undershoot": 1.2477154171688387,
+      "theta0": 1.369438406004566
+    },
+    {
+      "lambda0": 1.2,
+      "K": 128,
+      "kind": "lowpass",
+      "overshoot": 0.08823547152496891,
+      "undershoot": -0.09075435634338935,
+      "lambda_at_overshoot": 1.175951758050602,
+      "lambda_at_undershoot": 1.2239283410356259,
+      "theta0": 1.369438406004566
+    },
+    {
+      "lambda0": 1.2,
+      "K": 256,
+      "kind": "lowpass",
+      "overshoot": 0.08925920709662205,
+      "undershoot": -0.08972376755779787,
+      "lambda_at_overshoot": 1.187989967158716,
+      "lambda_at_undershoot": 1.2119800564896137,
+      "theta0": 1.369438406004566
+    },
+    {
+      "lambda0": 1.2,
+      "K": 512,
+      "kind": "lowpass",
+      "overshoot": 0.08974682807041168,
+      "undershoot": -0.08923009664078685,
+      "lambda_at_overshoot": 1.1939760427781032,
+      "lambda_at_undershoot": 1.2060164066109846,
+      "theta0": 1.369438406004566
+    },
+    {
+      "lambda0": 1.2,
+      "K": 1024,
+      "kind": "lowpass",
+      "overshoot": 0.08962480245544935,
+      "undershoot": -0.08935232865962572,
+      "lambda_at_overshoot": 1.1970002318315445,
+      "lambda_at_undershoot": 1.2029978946245377,
+      "theta0": 1.369438406004566
+    },
+    {
+      "lambda0": 1.2,
+      "K": 2048,
+      "kind": "lowpass",
+      "overshoot": 0.08941260602385781,
+      "undershoot": -0.08956432675196979,
+      "lambda_at_overshoot": 1.1984947096854017,
+      "lambda_at_undershoot": 1.201504818400024,
+      "theta0": 1.369438406004566
+    },
+    {
+      "lambda0": 1.6,
+      "K": 4,
+      "kind": "lowpass",
+      "overshoot": 0.11221207210394257,
+      "undershoot": -0.09917556648296422,
+      "lambda_at_overshoot": 0.88361287233406,
+      "lambda_at_undershoot": 2.0,
+      "theta0": 0.9272952180016121
+    },
+    {
+      "lambda0": 1.6,
+      "K": 8,
+      "kind": "lowpass",
+      "overshoot": 0.11085205152199507,
+      "undershoot": -0.06264068468222095,
+      "lambda_at_overshoot": 1.2715963251061007,
+      "lambda_at_undershoot": 1.84717205967715,
+      "theta0": 0.9272952180016121
+    },
+    {
+      "lambda0": 1.6,
+      "K": 16,
+      "kind": "lowpass",
+      "overshoot": 0.08240985926218025,
+      "undershoot": -0.09870810275303232,
+      "lambda_at_overshoot": 1.4424307563718202,
+      "lambda_at_undershoot": 1.7371665413062138,
+      "theta0": 0.9272952180016121
+    },
+    {
+      "lambda0": 1.6,
+      "K": 32,
+      "kind": "lowpass",
+      "overshoot": 0.09454457545704598,
+      "undershoot": -0.08424556558487639,
+      "lambda_at_overshoot": 1.5207427753417697,
+      "lambda_at_undershoot": 1.673567182807775,
+      "theta0": 0.9272952180016121
+    },
+    {
+      "lambda0": 1.6,
+      "K": 64,
+      "kind": "lowpass",
+      "overshoot": 0.08655596283968636,
+      "undershoot": -0.09255893268416304,
+      "lambda_at_overshoot": 1.5602722301590357,
+      "lambda_at_undershoot": 1.6383140740992541,
+      "theta0": 0.9272952180016121
+    },
+    {
+      "lambda0": 1.6,
+      "K": 128,
+      "kind": "lowpass",
+      "overshoot": 0.08811244702825682,
+      "undershoot": -0.09090219746010053,
+      "lambda_at_overshoot": 1.5803087585924591,
+      "lambda_at_undershoot": 1.619334237980552,
+      "theta0": 0.9272952180016121
+    },
+    {
+      "lambda0": 1.6,
+      "K": 256,
+      "kind": "lowpass",
+      "overshoot": 0.08968277214772424,
+      "undershoot": -0.08929865136626569,
+      "lambda_at_overshoot": 1.590198277347018,
+      "lambda_at_undershoot": 1.60971246847694,
+      "theta0": 0.9272952180016121
+    },
+    {
+      "lambda0": 1.6,
+      "K": 512,
+      "kind": "lowpass",
+      "overshoot": 0.08954609471953257,
+      "undershoot": -0.08943386261480368,
+      "lambda_at_overshoot": 1.5950732161322954,
+      "lambda_at_undershoot": 1.604904132034969,
+      "theta0": 0.9272952180016121
+    },
+    {
+      "lambda0": 1.6,
+      "K": 1024,
+      "kind": "lowpass",
+      "overshoot": 0.08964488534972137,
+      "undershoot": -0.0893324592143695,
+      "lambda_at_overshoot": 1.5975394279401296,
+      "lambda_at_undershoot": 1.6024549090883244,
+      "theta0": 0.9272952180016121
+    },
+    {
+      "lambda0": 1.6,
+      "K": 2048,
+      "kind": "lowpass",
+      "overshoot": 0.08954519664578742,
+      "undershoot": -0.08943108172849934,
+      "lambda_at_overshoot": 1.5987704203912845,
+      "lambda_at_undershoot": 1.6012281638649943,
+      "theta0": 0.9272952180016121
+    }
+  ],
+  "checks": {
+    "i_eval_paths_agree": {
+      "value": 7.105427357601002e-15,
+      "tol": 1e-10,
+      "pass": true,
+      "desc": "chebval vs cos(k theta) max|diff|"
+    },
+    "ii_coeff_paths_agree": {
+      "value": 4.1233412170771366e-10,
+      "tol": 0.0005,
+      "pass": true,
+      "N": 200000,
+      "desc": "closed-form vs DCT coeff max|diff|"
+    },
+    "iii_overshoot_to_G": {
+      "value": 0.08948896729071265,
+      "target": 0.08948987223608351,
+      "abs_err": 9.049453708609434e-07,
+      "tol": 0.002,
+      "pass": true,
+      "desc": "overshoot at K=2048, lambda0=1.0 vs G"
+    },
+    "iv_universal_in_lambda0": {
+      "value": 6.003525156999618e-05,
+      "tol": 0.002,
+      "pass": true,
+      "per_lambda0": {
+        "0.4": 0.08943108172849756,
+        "0.8": 0.08956432675196968,
+        "1.0": 0.08948896729071265,
+        "1.2": 0.08941260602385781,
+        "1.6": 0.08954519664578742
+      },
+      "desc": "std of overshoot across lambda0 at K=2048"
+    },
+    "v_non_vanishing": {
+      "value": 0.08948896729071265,
+      "floor": 0.085,
+      "pass": true,
+      "desc": "overshoot at K=2048 stays well above 0 (does not vanish)"
+    }
+  },
+  "all_pass": true,
+  "undershoot_at_Kmax_lambda1": -0.08948896729071099
+}
